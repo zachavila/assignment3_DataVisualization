@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--/*Zachary Avila
+  Professor Koop
+  Data Visualization
+  11/2/2018
+  */-->
+  <title>CIS 468 Assignment #3</title>
+  <style type="text/css">
+                          #cent,#cents{ position: relative;
+                            right: -230px;}
+    svg{ width: 100%; height: 100%; }
+    #info{
+      display:flex
+    }
+    div.left {
+      color: red;
+      border-radius: 12px;
+      text-align: left;
+      border-style: solid;
+      border-color: black;
+      width:fit-content;
+
+
+    }
+
+    div.right {
+      font-weight: lighter;
+      font-style: italic;
+      text-align: right;
+      flex:1;
+    }
+  </style>
+  <h1>Info</h1>
+  <div id="info">
+    <div class="left">
+      <h1> Name: Zachary Avila</h1>
+      <h2>Student ID: 01555278</h2>
+    </div>
+    <div class="right">
+      <h3>Data Visualization (CIS 468)</h3>
+      <h4>Assignment 3</h4>
+    </div>
+  </div>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+</head>
+<body>
+
+  <!-- HTML for Part 0 goes here -->
+
+  <h1>Citibike Station Map</h1>
+  <div id="station-map"></div>
+
+  <h1>Citibike Availability Scatterplot</h1>
+  <div id="scatterplot"></div>
+
+  <h1>Citibike Availability Choropleth Map</h1>
+  <div id="availability-map"></div>
+
+  <h1>Extra Credit</h1>
+  <div id="extracredit"></div>
+
+  <!-- Make sure everything is loaded before defining JavaScript. -->
+  <script type="text/javascript" src="a3.js"></script>
+</body>
+</html>
